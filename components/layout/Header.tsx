@@ -85,20 +85,20 @@ const Header = () => {
             <ul className="navbar-nav d-flex justify-content-between">
               <div className="d-flex flex-lg-row flex-column">
                 <li className="nav-item active">
-                  <a className="nav-link" href="menu.html">
+                  <Link className="nav-link" href="/menu">
                     Menu
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="team.html">
+                  <Link className="nav-link" href="/team">
                     Team
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item dropdown">
-                  <a className="nav-link" href="reservation.html">
+                  <Link className="nav-link" href="/reservation">
                     Reservation
-                  </a>
+                  </Link>
                 </li>
               </div>
               <li className="nav-item">

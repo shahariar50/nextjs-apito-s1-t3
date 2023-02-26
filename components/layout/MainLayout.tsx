@@ -7,7 +7,7 @@ type mainLayoutProps = {
 
 const MainLayout: React.FC<mainLayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div className="boxed-page">
       <Header />
       {children}
       <Footer />

@@ -42,9 +42,9 @@ const Header = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="about.html">
+                  <Link className="nav-link" href="/about">
                     About
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item dropdown">
@@ -63,12 +63,12 @@ const Header = () => {
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdown"
                   >
-                    <a className="dropdown-item" href="special-dishes.html">
+                    <Link className="dropdown-item" href="/special-dishes">
                       Beef Steak Sauce
-                    </a>
-                    <a className="dropdown-item" href="special-dishes.html">
+                    </Link>
+                    <Link className="dropdown-item" href="/special-dishes">
                       Salmon Zucchini
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </div>
@@ -79,7 +79,7 @@ const Header = () => {
               href="#"
             >
               <picture>
-                <img src="img/logo.png" alt="" />
+                <img src="/static/img/logo.png" alt="" />
               </picture>
             </a>
             <ul className="navbar-nav d-flex justify-content-between">

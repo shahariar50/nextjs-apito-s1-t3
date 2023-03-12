@@ -306,6 +306,23 @@ a:hover {
 
 .testi-content {
   text-align: center;
+  padding-bottom: 50px;
+}
+.testi-content .swiper-pagination {
+  bottom: 0;
+}
+.testi-content .swiper-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 1;
+  border-radius: 50%;
+}
+.testi-content
+  .swiper-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px white;
 }
 .testi-content .testi-text {
   font-style: italic;

@@ -1,3 +1,6 @@
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
 const TestemonialSection = () => {
   return (
     <section
@@ -12,8 +15,16 @@ const TestemonialSection = () => {
             <h2>Happy Customer</h2>
           </div>
           <div className="row">
-            <div className="testi-content testi-carousel owl-carousel">
-              <div className="testi-item">
+            <Swiper
+              modules={[Pagination]}
+              spaceBetween={50}
+              slidesPerView={1}
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              pagination={true}
+              className="testi-content testi-carousel"
+            >
+              <SwiperSlide className="testi-item">
                 <i className="testi-icon fa fa-3x fa-quote-left"></i>
                 <p className="testi-text">
                   Excepteur sint occaecat cupidatat non proident, sunt in culpa
@@ -23,8 +34,8 @@ const TestemonialSection = () => {
                 <p className="testi-desc">
                   CEO of <span>GetTemplates</span>
                 </p>
-              </div>
-              {/* <div className="testi-item">
+              </SwiperSlide>
+              <SwiperSlide className="testi-item">
                 <i className="testi-icon fa fa-3x fa-quote-left"></i>
                 <p className="testi-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -34,8 +45,8 @@ const TestemonialSection = () => {
                 <p className="testi-desc">
                   CTO of <span>Unidentity Inc</span>
                 </p>
-              </div> */}
-            </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
